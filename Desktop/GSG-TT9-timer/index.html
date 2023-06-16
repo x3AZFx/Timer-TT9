@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesh`eet" href="./style.css">
+    
+    <title>Google Timer</title>
+</head>
+<body>
+    
+    <main>
+        <header>
+            <ul class="tabs">
+                <li id="timer" class="active">Timer</li>
+                <li id="stopwatch">Stopwatch</li>
+            </ul>
+        </header>
+
+
+        <section class="content">
+
+            <article id="timerTime">
+                <label for="timerInputHiddin" class="timeInput">
+                    <span class="hours unit">
+                        <span class="num">00</span>
+                        <span class="char">h</span>
+                    </span>
+                    <span class="minutes unit">
+                        <span class="num">00</span>
+                        <span class="char">m</span>
+                    </span>
+                    <span class="seconds unit">
+                        <span class="num">00</span>
+                        <span class="char">s</span>
+                    </span>
+                </label>
+                <input type="text" maxlength="6" id="timerInputHiddin" value="">
+            </article>
+
+
+            <article id="stopwatchTime"></article>
+
+        </section>
+
+
+        <footer>
+            <section class="burrons">
+                <button id="play" data-state="play">Start</button>
+                <button id="reset">Reset</button>
+            </section>
+        </footer>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>
